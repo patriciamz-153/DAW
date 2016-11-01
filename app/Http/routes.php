@@ -15,10 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('encuesta1', function(){
-	return view('vwEncuesta1')
-	;
-});
+Route::get ('encuesta1', 'Encuesta1Controller@index');
+Route::post('encuesta1', 'Encuesta1Controller@contacto');
 
 /*
 |--------------------------------------------------------------------------
